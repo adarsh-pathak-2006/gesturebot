@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+#video {
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gesture {
+    color: #007bff;
+    transition: color 0.5s;
+}
+
+#gesture.detecting {
+    color: #ffc107; /* Yellow for detecting */
+}
+
+#gesture.sent {
+    color: #28a745; /* Green for sent */
+}
+
+#chat-window {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-msg, .bot-msg {
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.user-msg {
+    text-align: right;
+}
+
+.user-msg span {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px 20px 0 20px;
+    display: inline-block;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bot-msg {
+    text-align: left;
+}
+
+.bot-msg span {
+    background: #e9ecef;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px 20px 20px 0;
+    display: inline-block;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-top: 2px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
