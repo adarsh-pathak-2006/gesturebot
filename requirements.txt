@@ -1,0 +1,6 @@
+Flask==2.3.3
+opencv-python==4.9.0.80
+mediapipe==0.10.14
+gtts==2.5.1
+requests==2.31.0
+protobuf==4.25.3
